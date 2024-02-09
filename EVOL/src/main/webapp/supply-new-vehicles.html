@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply New Vehicles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Supply New Vehicles</h1>
+<h5>Go Green Go Electric</h5>
+
+<form id=VehicleForm action="/model/VehicleServlet" method="post">
+
+    <label for="vehicleType">Vehicle Type:</label>
+    <select id="vehicleType" name="vehicleType" required>
+        <option value="Car" selected>Car</option>
+        <option value="Motorbike">Motorbike</option>
+        <option value="Scooter">Scooter</option>
+        <option value="Bicycle">Bicycle</option>
+    </select>
+
+    <label for="vehicleColor">Color:</label>
+    <input type="text" id="vehicleColor" name="vehicleColor" required>
+
+    <label for="vehicleModel">Model:</label>
+    <input type="text" id="vehicleModel" name="vehicleModel" required>
+
+    <label for="vehicleBrand">Brand:</label>
+    <input type="text" id="vehicleBrand" name="vehicleBrand" required>
+
+    <label for="dailyRentalCost">Daily Rental Cost (Decimal):</label>
+    <input type="text" id="dailyRentalCost" name="dailyRentalCost" required>
+
+    <label for="dailyInsuranceCost">Daily Insurance Cost (Decimal):</label>
+    <input type="text" id="dailyInsuranceCost" name="dailyInsuranceCost" required>
+
+    <label for="hourlyDelayedCost">Cost per Delayed Hour (Decimal):</label>
+    <input type="text" id="hourlyDelayedCost" name="hourlyDelayedCost" required>
+
+    <label for="rangeInKilometers">Range (Km):</label>
+    <input type="text" id="rangeInKilometers" name="rangeInKilometers" required>
+
+    <label for="numberOfPassengers">Number of Passengers:</label>
+    <input type="text" id="numberOfPassengers" name="numberOfPassengers" required>
+
+    <label for="carType">Car Type:</label>
+    <input type="text" id="carType" name="carType" required>
+
+    <!-- Additional field for unique number if the vehicle is unregistered -->
+    <div id="unregisteredFields" style="display: none;">
+        <label for="uniqueNumber">Unique Number:</label>
+        <input type="text" id="uniqueNumber" name="uniqueNumber" required>
+    </div>
+
+    <!-- Additional field for register number if the vehicle is unregistered -->
+    <div id="registeredFields" style="display: none;">
+        <label for="registered">Registration Number:</label>
+        <input type="text" id="registration" name="registration" required>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    // Show/hide the registration number and unique number fields based on the selected status
+    document.getElementById('vehicleStatus').addEventListener('change', function() {
+        var registeredFields = document.getElementById('registeredFields');
+        var unregisteredFields = document.getElementById('unregisteredFields');
+
+        if (this.value === 'registered') {
+            registeredFields.style.display = 'block';
+            unregisteredFields.style.display = 'none';
+        } else {
+            registeredFields.style.display = 'none';
+            unregisteredFields.style.display = 'block';
+        }
+    });
+</script>
+</body>
+</html>

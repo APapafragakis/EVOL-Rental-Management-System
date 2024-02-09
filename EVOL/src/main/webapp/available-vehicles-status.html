@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rented Vehicles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+        <h1>Rented Vehicles</h1>
+        <form action="/model/AvailableVehiclesServlet" method="post">
+    		<label for="vehicleType">Vehicle Type:</label>
+    		<select id="vehicleType" name="vehicleType" required>
+        		<option value="Car" selected>Car</option>
+        		<option value="Motorbike">Motorbike</option>
+        		<option value="Scooter">Scooter</option>
+        		<option value="Bicycle">Bicycle</option>
+    		</select>
+            <button type="submit" class="btn btn-primary btn-lg">Search</button>
+        </form>
+    </div>
+</body>
+
+</html>
+

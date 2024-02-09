@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Vehicle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Rent Vehicle</h1>
+<h5>Go Green Go Electric</h5>
+
+<form action="/process-rental" method="post">
+    <label for="vehicleType">Vehicle Type:</label>
+    <select id="vehicleType" name="vehicleType" required>
+        <option value="Car">Car</option>
+        <option value="Motorbike">Motorbike</option>
+    </select>
+
+    <label for="driverLicenseNumber">Driver License Number:</label>
+    <input type="text" id="driverLicenseNumber" name="driverLicenseNumber" required>
+
+    <label for="rentalId">Rental ID:</label>
+    <input type="text" id="rentalId" name="rentalId" required>
+
+    <label for="deliveryDay">Delivery Day:</label>
+    <input type="text" id="deliveryDay" name="deliveryDay" required>
+
+    <label for="deliveryHour">Delivery Hour:</label>
+    <input type="text" id="deliveryHour" name="deliveryHour" required>
+
+    <label for="deliveryMonth">Delivery Month:</label>
+    <input type="text" id="deliveryMonth" name="deliveryMonth" required>
+
+    <label for="deliveryYear">Delivery Year:</label>
+    <input type="text" id="deliveryYear" name="deliveryYear" required>
+
+    <label for="returnDay">Return Day:</label>
+    <input type="text" id="returnDay" name="returnDay" required>
+
+    <label for="returnHour">Return Hour:</label>
+    <input type="text" id="returnHour" name="returnHour" required>
+
+    <label for="returnMonth">Return Month:</label>
+    <input type="text" id="returnMonth" name="returnMonth" required>
+
+    <label for="returnYear">Return Year:</label>
+    <input type="text" id="returnYear" name="returnYear" required>
+
+    <label for="isCustomerDriver">Is Customer the Driver?</label>
+    <select id="isCustomerDriver" name="isCustomerDriver" required>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="driverIdentificationNumber">Driver Identification Number:</label>
+    <input type="text" id="driverIdentificationNumber" name="driverIdentificationNumber">
+
+    <label for="driverBirthDay">Driver Birth Day:</label>
+    <input type="text" id="driverBirthDay" name="driverBirthDay">
+
+    <label for="driverBirthMonth">Driver Birth Month:</label>
+    <input type="text" id="driverBirthMonth" name="driverBirthMonth">
+
+    <label for="driverBirthYear">Driver Birth Year:</label>
+    <input type="text" id="driverBirthYear" name="driverBirthYear">
+
+    <label for="paymentId">Payment ID:</label>
+    <input type="text" id="paymentId" name="paymentId" required>
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
+
+    <button type="submit">Rent Vehicle</button>
+</form>
+</body>
+
+</html>

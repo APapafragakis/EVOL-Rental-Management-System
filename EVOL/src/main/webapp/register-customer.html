@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Customer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Register New Customer</h1>
+<h5>Go Green Go Electric</h5>
+
+<form id=CustomerForm action="/model/CustomerServelet" method="post">
+    <!-- Left Column -->
+    <div class="form-column">
+        <label for="clientIdentification">Identification Number:</label>
+        <input type="text" id="clientIdentification" name="clientIdentification" required>
+
+        <label for="clientFirstName">First Name:</label>
+        <input type="text" id="clientFirstName" name="clientFirstName" required>
+
+        <label for="clientLastName">Last Name:</label>
+        <input type="text" id="clientLastName" name="clientLastName" required>
+
+        <label for="clientCity">City:</label>
+        <input type="text" id="clientCity" name="clientCity" required>
+
+        <label for="clientStreet">Street:</label>
+        <input type="text" id="clientStreet" name="clientStreet" required>
+
+        <label for="clientHouseNumber">House Number:</label>
+        <input type="text" id="clientHouseNumber" name="clientHouseNumber" required>
+
+        <label for="clientPostalCode">Postal Code:</label>
+        <input type="text" id="clientPostalCode" name="clientPostalCode" required>
+    </div>
+
+    <!-- Right Column -->
+    <div class="form-column">
+        <label>Date of Birth:</label>
+        <input type="date" id="clientBirthDate" name="clientBirthDate" required>
+
+        <label for="clientCreditCardExpDate">Credit Card Expiration Date:</label>
+        <input type="month" id="clientCreditCardExpDate" name="clientCreditCardExpDate" required>
+
+        <label for="clientCreditCardNumber">Credit Card Number:</label>
+        <input type="text" id="clientCreditCardNumber" name="clientCreditCardNumber" required>
+
+        <label for="clientCreditCardCCV">Credit Card CCV:</label>
+        <input type="text" id="clientCreditCardCCV" name="clientCreditCardCCV" required>
+    </div>
+
+	<button type="submit" name="Submit">SubmitCustomer</button>
+</form>
+</body>
+
+</html>
+

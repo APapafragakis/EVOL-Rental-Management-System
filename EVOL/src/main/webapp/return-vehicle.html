@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Rented Vehicle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Return Rented Vehicle</h1>
+<h5>Go Green Go Electric</h5>
+
+<form action="/process-return" method="post">
+    <label for="rentalId">Rental ID:</label>
+    <input type="text" id="rentalId" name="rentalId" required>
+
+    <label for="returnDate">Return Date:</label>
+    <input type="date" id="returnDate" name="returnDate" required>
+
+    <label for="returnTime">Return Time:</label>
+    <input type="time" id="returnTime" name="returnTime" required>
+
+    <button type="submit">Complete Return</button>
+</form>
+</body>
+</html>

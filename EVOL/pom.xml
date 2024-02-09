@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.model</groupId>
+	<artifactId>model</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Project360</name>
+	<description>Demo project for Database course</description>
+	<packaging>war</packaging>
+	<properties>
+		<java.version>21</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.22</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<!-- this goes within <build> -->
+		<plugins>
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>exec-maven-plugin</artifactId>
+			    <version>1.6.0</version>
+			    <executions>
+			      <execution>
+			        <goals>
+			          <goal>java</goal>
+			        </goals>
+			      </execution>
+			    </executions>
+			    <configuration>
+			      <mainClass>com.team_34.Main</mainClass>
+			    </configuration>
+			</plugin>
+			<plugin>
+			  	<groupId>org.apache.tomcat.maven</groupId>
+    			<artifactId>tomcat7-maven-plugin</artifactId>
+    			<version>2.2</version>
+    			<configuration>
+      				<port>8080</port>
+    			</configuration>
+			</plugin>
+		</plugins>
+		<!-- other properties -->
+	</build>
+
+</project>

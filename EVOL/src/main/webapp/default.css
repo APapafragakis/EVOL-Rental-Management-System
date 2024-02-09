@@ -1,0 +1,64 @@
+#outerContent {
+    max-width: 600px;
+    margin: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c35; /* Dark background color */
+    color: #fff; /* Text color */
+}
+
+.header {
+    background-color: #1c1f26; /* Darker background color */
+    border-bottom: 1px solid #383d48; /* Darker border color */
+    padding: 1rem;
+}
+
+.header-dark {
+    background-color: #1c1f26; /* Darker background color */
+    color: #fff; /* Text color */
+}
+.container {
+    flex: 1;
+    background-color: #1c1f26; /* Darker background color */
+    border: 1px solid #383d48; /* Darker border color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #1c1f26; /* Darker background color */
+    border-top: 1px solid #383d48; /* Darker border color */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.list-group-item {
+    background-color: #282c35; /* Dark background color for list items */
+    color: #fff; /* Text color for list items */
+    border: 1px solid #383d48; /* Darker border color for list items */
+}
+
+.list-group-item:hover {
+    background-color: #383d48; /* Darker background color on hover */
+}
+
+.list-group-item.active {
+    background-color: #383d48; /* Darker background color for active item */
+}
+
+.footer-text {
+    color: #888; /* Gray text color */
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif; /* Use a common sans-serif font */
+    font-size: 2.5em; /* Increase font size */
+    margin-bottom: 0; /* Remove default margin */
+}
+
